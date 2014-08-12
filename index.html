@@ -26,8 +26,34 @@
 
     </header>
     <section>
-        <h2>Najbliższy warsztat</h2>
-
+        <h2>Haskell (najbliższe spotkanie)</h2>
+        <div class="date">Czas: <i>środa, 13 sierpnia o 19:00</i></div>
+        <div class="place">Miejsce: <i>Kicia Kocia na <a href="https://www.google.pl/maps/place/Klubokawiarnia+Kicia+Kocia/@52.242885,21.08285,17z/data=!3m1!4b1!4m2!3m1!1s0x471ecdbee5092f4b:0x4f0b11354dbe51fe">Garibaldiego 5A</a></i></div>
+        <div>Niezbędne:
+			<ul>
+				<li>GHC: <tt>sudo apt-get install ghc ghc-doc ghc-haddock ghc-dynamic</tt></li>
+				<li>Cabal: <tt>sudo apt-get install cabal-install</tt></li>
+				<li><a href="http://eclipse.org">Eclipse</a></li>
+				<li>wtyczka <a href="http://eclipsefp.github.io/">EclipseFP</a></li>
+			</ul>
+        </div>
+        <div>
+			<p>Na spotkanie polecam wziąć komputery z Linuksem, wszystko powinno też działać na Mac OS X i na Windowsie (ale instalacja na FP Windowsie jest dużo bardziej upierdliwa).</p>
+			<p>Instalacja wtyczki EclipseFP wymaga trochę pracy. Trzeba zainstalować samą wtyczkę wg <a href="http://eclipsefp.github.io/install.html">instrukcji</a>. Po uruchomieniu (albo 
+				przy próbie stworzenia pierwszego projektu haskellowego), wtyczka będzie chciała zainstalować za pomocą cabala dodatkowe pakiety. Niestety, cabal nie zawsze działa idealnie, 
+				może się okazać, że brakuje jakiejś zależności w systemie operacyjnym. Jeśli nie uda się czegoś zainstalować, w konsoli w Eclipse znajdziecie nazwy pakietów, których 
+				nie udało się zainstalować. Spróbujcie zainstalować je ręcznie za pomocą cabala: cabal install nazwa_pakietu (nie trzeba sudo). W konsoli powinniście znaleźć czytelniejszy opis 
+				błędu, w szczególności dowiecie się stamtąd, jakiego programu/biblioteki brakuje w systemie. Należy to doinstalować za pomocą apt-get, powtórzyć cabal install i zrestartować Eclipse. 
+				I tak do skutku. :)</p>
+			<p>Eclipse z wtyczką EclipseFP nie jest konieczny, wystarczy jakikolwiek edytor tekstu z wsparciem dla składni Haskella. Jednakże w EclipseFP dość dobrze działają podpowiedzi. Da się też
+				automatycznie rozwiązywać niektóre problemy z typami, dopisywać sygnatury, potrzebne anotacje itp., więc bardzo to ułatwia pracę, szczególnie początkującym.</p>
+			<p>Mogę Wam u siebie na laptopie utworzyć konto gościa, do którego będziecie się mogli podłączyć przez SSH. Haskell będzie Wam wtedy działać, ale będziecie się musieli zadowolić vimem albo 
+				emacsem. :) Jeżeli ktoś będzie zainteresowany takim rozwiązaniem, proszę o wiadomość.</p>
+        </div>
+    </section>
+    
+    <section>
+		<h2>Congomongo (MongoDB)</h2>
         <div class="date">Czas: <i>czwartek, 17. lipca o 19:00</i></div>
         <div class="place">Miejsce: <i>Kufle i Kapsle na <a href="https://www.google.pl/maps/place/Nowogrodzka+25,+Warszawa/@52.2291759,21.0145689,17z/data=!3m1!4b1!4m2!3m1!1s0x471eccf3cfcde247:0x7dba0f4c16bb4b68">Nowogrodzka 25</a></i></div>
         <div>Temat: <i>congomongo (MongoDB)</i></div>
